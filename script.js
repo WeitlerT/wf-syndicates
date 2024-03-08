@@ -1,3 +1,8 @@
+const steelBtn = document.getElementById('steelMeridian')
+steelBtn.addEventListener('click', function() {
+    window.location.href = 'pages/steel.html';
+})
+
 function getOrder(url){
     fetch(url)
         .then(response => {
