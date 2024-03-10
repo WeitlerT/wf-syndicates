@@ -1,27 +1,83 @@
 body {
-    padding: 0px;
     margin: 0px;
     background-color: #3E3E42;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
 /* CONTAINERS/WRAPPERS */
 .home-container {
-    height: 100vh;
+    box-sizing: border-box;
     padding: 10px;
+    height: 100vh;
     display: grid;
-    gap: 5px;
+    gap: 7px;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
 }
 
-#titleWrapper {
+.titleWrapper {
+    color: white;
     display: flex;
+}
+
+#logoNameWrapper {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    margin-right: 15%;
 }
 
 #homeTitle {
     color: white;
 }
+
+.fetchBtnWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.syndTitle {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    color: white;
+    -webkit-box-shadow: 0px 10px 15px -5px #000000; 
+    box-shadow: 0px 9px 4px -3px rgba(0,0,0,0.3);
+    margin-bottom: 15px;
+}
+
+/* LOADING CONTAINER/TOAST */
+#loadingToast {
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadingToast p {
+    margin: 0px;
+}
+
+#loadingContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure it appears above other elements */
+  }
+
 
 /* SCROLLBAR */
 ::-webkit-scrollbar {
@@ -56,13 +112,42 @@ button:hover {
     display: inline-block;
 }
 
+.fetchDataBtn {
+    background-color: #1b1c1f9f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.fetchDataBtn:hover {
+    background-color: #121214; 
+    transform: scale(1.1);
+}
+
 .icon {
     margin-right: 5px; /* Adjust the margin as needed */
     vertical-align: middle; /* Align the image vertically */
     max-width: 50px;
+    max-height: 50px;
 }
 
-/* BUTTONS */
+.back-to-home img {
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  }
+  
+  .back-to-home:hover img {
+    transform: scale(1.1); /* Increase the size on hover (1.1 is 110% of the original size) */
+  }
+
+.back-to-home {
+    margin-left: 10px;
+}
+
+/* HOME BUTTONS */
 #steelMeridian {
     background-color: #2C3E47;
     color: white;
@@ -204,3 +289,38 @@ button:hover {
 #kahl:hover {
     filter: brightness(1.2);
 }
+
+/* CAVIA */
+.titleWrapperCavia {
+    background-color: rgb(42,37,36);
+}
+
+/* KAHL */
+.titleWrapperKahl {
+    background-color: rgb(4,34,18);
+}
+
+/* CARD STYLING */
+#cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgb(54, 54, 56);
+    padding: 16px;
+    margin: 8px;
+    box-shadow: 0px 7px 6px 0px rgba(0,0,0,0.1);
+  }
+  
+  .card h3 {
+    margin-bottom: 8px;
+    color: white;
+  }
+  
+  .card p {
+    color: white;
+  }

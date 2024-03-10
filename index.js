@@ -13,7 +13,7 @@ function createWindow () {
     }
   })
   // Hide electron menu bar
-  win.setMenuBarVisibility(false)
+  // win.setMenuBarVisibility(false)
   // Open chrome dev tools
   win.webContents.openDevTools()
   win.loadFile('index.html')
