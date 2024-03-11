@@ -300,6 +300,11 @@ button:hover {
     background-color: rgb(4,34,18);
 }
 
+/* HOLDFASTS */
+.titleWrapperHoldfasts {
+    background-color: rgb(26,31,40);
+}
+
 /* CARD STYLING */
 #cardContainer {
     display: grid;
