@@ -290,6 +290,16 @@ button:hover {
     filter: brightness(1.2);
 }
 
+/* NECRALOID */
+.titleWrapperNecraloid {
+    background-color: rgb(51,50,50);
+}
+
+/* HOLDFASTS */
+.titleWrapperHoldfasts {
+    background-color: rgb(26,31,40);
+}
+
 /* CAVIA */
 .titleWrapperCavia {
     background-color: rgb(42,37,36);
@@ -298,11 +308,6 @@ button:hover {
 /* KAHL */
 .titleWrapperKahl {
     background-color: rgb(4,34,18);
-}
-
-/* HOLDFASTS */
-.titleWrapperHoldfasts {
-    background-color: rgb(26,31,40);
 }
 
 /* CARD STYLING */
