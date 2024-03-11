@@ -54,8 +54,8 @@ let caviaList = [
     { name: 'Necramech Thrusters', plat: 0, standing: 28000, url: convertToSnakeCase('Necramech Thrusters'), rank: 0 },
     { name: 'Melee Retaliation', plat: 0, standing: 5000 * 21, url: convertToSnakeCase('Melee Retaliation'), rank: 5 },
     { name: 'Melee Fortification', plat: 0, standing: 5000 * 21, url: convertToSnakeCase('Melee Fortification'), rank: 5 },
-    { name: 'Melee Exposure', plat: 0, standing: 5000 * 21, url: convertToSnakeCase('Melee Exposure'), rank: 5 },
-    { name: 'Melee Influence', plat: 0, standing: 5000 * 21, url: convertToSnakeCase('Melee Influence'), rank: 5 },
-    { name: 'Melee Animosity', plat: 0, standing: 5000 * 21, url: convertToSnakeCase('Melee Animosity'), rank: 5 },
-    { name: 'Melee Vortex', plat: 0, standing: 5000 * 21, url: convertToSnakeCase('Melee Vortex'), rank: 5 },
+    { name: 'Melee Exposure', plat: 0, standing: 7500 * 21, url: convertToSnakeCase('Melee Exposure'), rank: 5 },
+    { name: 'Melee Influence', plat: 0, standing: 7500 * 21, url: convertToSnakeCase('Melee Influence'), rank: 5 },
+    { name: 'Melee Animosity', plat: 0, standing: 7500 * 21, url: convertToSnakeCase('Melee Animosity'), rank: 5 },
+    { name: 'Melee Vortex', plat: 0, standing: 7500 * 21, url: convertToSnakeCase('Melee Vortex'), rank: 5 },
 ];
