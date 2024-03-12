@@ -3,6 +3,11 @@ steelBtn.addEventListener('click', function() {
       window.location.href = 'pages/steel.html';
 })
 
+const entratiBtn = document.getElementById('entrati')
+entratiBtn.addEventListener('click', function() {
+    window.location.href = 'pages/entrati.html';
+})
+
 const necraloidBtn = document.getElementById('necraloid')
 necraloidBtn.addEventListener('click', function() {
     window.location.href = 'pages/necraloid.html';

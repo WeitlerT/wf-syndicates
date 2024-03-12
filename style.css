@@ -290,6 +290,11 @@ button:hover {
     filter: brightness(1.2);
 }
 
+/* ENTRATI */
+.titleWrapperEntrati {
+    background-color: rgb(72,79,90);
+}
+
 /* NECRALOID */
 .titleWrapperNecraloid {
     background-color: rgb(51,50,50);
