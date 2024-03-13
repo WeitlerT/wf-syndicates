@@ -33,12 +33,13 @@ fetchBtn.addEventListener('click', function() {
 
 // Big pretty list goes here
 let entratiList = [
-    { name: 'Damzav Vati', plat: 0, standing: 10000, url: convertToSnakeCase('Necramech Vitality'), rank: 0 },
-    { name: 'Necramech Refuel', plat: 0, standing: 10000, url: convertToSnakeCase('Necramech Refuel'), rank: 0 },
-    { name: 'Necramech Intensify', plat: 0, standing: 25000, url: convertToSnakeCase('Necramech Intensify'), rank: 0 },
-    { name: 'Necramech Pressure Point', plat: 0, standing: 25000, url: convertToSnakeCase('Necramech Pressure Point'), rank: 0 },
-    { name: 'Necramech Efficiency', plat: 0, standing: 25000, url: convertToSnakeCase('Necramech Efficiency'), rank: 0 },
-    { name: 'Necramech Drift', plat: 0, standing: 25000, url: convertToSnakeCase('Necramech Drift'), rank: 0 },
-    { name: 'Necramech Friction', plat: 0, standing: 25000, url: convertToSnakeCase('Necramech Friction'), rank: 0 },
-    { name: 'Necramech Flow', plat: 0, standing: 25000, url: convertToSnakeCase('Necramech Flow'), rank: 0 },
+    { name: 'Damzav Vati (Father)', plat: 0, standing: 20000, url: convertToSnakeCase('Damzav Vati'), rank: 0 },
+    { name: 'Zazvat Kar (Father)', plat: 0, standing: 20000, url: convertToSnakeCase('Zazvat Kar'), rank: 0 },
+    { name: 'Bhisaj Bal (Father)', plat: 0, standing: 20000, url: convertToSnakeCase('Bhisaj Bal'), rank: 0 },
+    { name: 'Hata Satya (Father)', plat: 0, standing: 20000, url: convertToSnakeCase('Hata Satya'), rank: 0 },
+    { name: 'Vicious Bond (Son)', plat: 0, standing: 20000, url: convertToSnakeCase('Vicious Bond'), rank: 0 },
+    { name: 'Contagious Bond (Son)', plat: 0, standing: 20000, url: convertToSnakeCase('Contagious Bond'), rank: 0 },
+    { name: 'Duplex Bond (Son)', plat: 0, standing: 20000, url: convertToSnakeCase('Duplex Bond'), rank: 0 },
+    { name: 'Martyr Symbiosis (Son)', plat: 0, standing: 20000, url: convertToSnakeCase('Martyr Symbiosis'), rank: 0 },
+    { name: 'Volatile Parasite (Son)', plat: 0, standing: 20000, url: convertToSnakeCase('Volatile Parasite'), rank: 0 },
 ];

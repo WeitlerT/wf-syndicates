@@ -76,8 +76,13 @@ function populatePage(list, containerId) {
         const card = document.createElement('div');
         card.classList.add('card');
 
-        const title = document.createElement('h3');
-        title.textContent = item.name;
+        // OLD TITLE
+        // const title = document.createElement('h3');
+        // title.textContent = item.name;
+
+        const titleLink = document.createElement('a');
+        titleLink.href = `https://warframe.market/items/${item.url}`;
+        titleLink.textContent = item.name;
 
         const platParagraph = document.createElement('p');
         platParagraph.textContent = `Plat Avg: ${item.plat}`;
@@ -91,8 +96,16 @@ function populatePage(list, containerId) {
         const platStandingParagraph = document.createElement('p');
         platStandingParagraph.textContent = `Plat:Standing Ratio: ${((item.plat / item.standing)* 10).toFixed(4)}`
 
+        const platImg = document.createElement('img');
+        platImg.src = '../images/PlatinumLarge.webp';
+        platParagraph.appendChild(platImg);
+
+        const standingImg = document.createElement('img');
+        standingImg.src = '../images/ReputationLargeBlack.webp';
+        standingParagraph.appendChild(standingImg);
+
         // Append elements to the card
-        card.appendChild(title);
+        card.appendChild(titleLink);
         card.appendChild(platParagraph);
         card.appendChild(standingParagraph);
         card.appendChild(rankParagraph);

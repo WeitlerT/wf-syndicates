@@ -290,6 +290,21 @@ button:hover {
     filter: brightness(1.2);
 }
 
+/* QUILLS */
+.titleWrapperQuills {
+    background-color: rgb(246,251,203);
+}
+
+/* SOLARIS UNITED */
+.titleWrapperSolarisUnited {
+    background-color: rgb(102,72,50);
+}
+
+/* VOX SOLARIS */
+.titleWrapperVoxSolaris {
+    background-color: rgb(243,229,166);
+}
+
 /* ENTRATI */
 .titleWrapperEntrati {
     background-color: rgb(72,79,90);
@@ -331,11 +346,19 @@ button:hover {
     box-shadow: 0px 7px 6px 0px rgba(0,0,0,0.1);
   }
   
-  .card h3 {
+  .card a {
     margin-bottom: 8px;
     color: white;
+    font-size: 24px;
   }
   
   .card p {
     color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  .card img {
+    max-width: 20px;
+    margin-left: 5px;
   }
