@@ -7,6 +7,8 @@ import { showLoadingIndicator } from "./main.js";
 import { hideLoadingIndicator } from "./main.js";
 import { sortByRatioDescending } from "./main.js";
 
+let container = document.getElementById('cardContainer');
+
 // Fetch button, every page will have one of these
 const fetchBtn = document.querySelector('.fetchDataBtn')
 fetchBtn.addEventListener('click', function() {

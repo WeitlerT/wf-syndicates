@@ -32,7 +32,7 @@ function getAvgPlat(data, rank){
 }
 
 // Function to fetch data from the API and update the plat field
-function fetchDataAndUpdatePlat(item, maxRetries = 10, delay = 1000) {
+function fetchDataAndUpdatePlat(item, maxRetries = 10, delay = 2000) {
     // Show our loading toast while we wait for data to load
     showLoadingIndicator();
 

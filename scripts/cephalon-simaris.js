@@ -20,14 +20,14 @@ fetchBtn.addEventListener('click', function() {
     }
     
     // Replace list with whatever list you have for page
-    const necraloidPromises = necraloidList.map(item => fetchDataAndUpdatePlat(item));
+    const cephSimPromises = cephSimList.map(item => fetchDataAndUpdatePlat(item));
 
     // Promise for our fetch function in main.js
-    Promise.all(necraloidPromises)
+    Promise.all(cephSimPromises)
         .then(() => {
             // All fetch requests completed, and plat fields are updated
-            console.log(necraloidList);
-            let sortedList = sortByRatioDescending(necraloidList)
+            console.log(cephSimList);
+            let sortedList = sortByRatioDescending(cephSimList)
             populatePage(sortedList, 'cardContainer')
         })
         .then (() =>{
@@ -41,13 +41,15 @@ fetchBtn.addEventListener('click', function() {
 })
 
 // Big pretty list goes here
-let necraloidList = [
-    { name: 'Necramech Vitality', plat: 0, standing: 10000, url: convertToSnakeCase('Necramech Vitality'), rank: 0 },
-    { name: 'Necramech Refuel', plat: 0, standing: 10000, url: convertToSnakeCase('Necramech Refuel'), rank: 0 },
-    { name: 'Necramech Intensify', plat: 0, standing: 25000, url: convertToSnakeCase('Necramech Intensify'), rank: 0 },
-    { name: 'Necramech Pressure Point', plat: 0, standing: 25000, url: convertToSnakeCase('Necramech Pressure Point'), rank: 0 },
-    { name: 'Necramech Efficiency', plat: 0, standing: 25000, url: convertToSnakeCase('Necramech Efficiency'), rank: 0 },
-    { name: 'Necramech Drift', plat: 0, standing: 25000, url: convertToSnakeCase('Necramech Drift'), rank: 0 },
-    { name: 'Necramech Friction', plat: 0, standing: 25000, url: convertToSnakeCase('Necramech Friction'), rank: 0 },
-    { name: 'Necramech Flow', plat: 0, standing: 25000, url: convertToSnakeCase('Necramech Flow'), rank: 0 },
+let cephSimList = [
+    { name: 'Looter', plat: 0, standing: 75000, url: convertToSnakeCase('Looter'), rank: 0 },
+    { name: 'Detect Vulnerability', plat: 0, standing: 75000, url: convertToSnakeCase('Detect Vulnerability'), rank: 0 },
+    { name: 'Reawaken', plat: 0, standing: 75000, url: convertToSnakeCase('Reawaken'), rank: 0 },
+    { name: 'Negate', plat: 0, standing: 75000, url: convertToSnakeCase('Negate'), rank: 0 },
+    { name: 'Ambush', plat: 0, standing: 75000, url: convertToSnakeCase('Ambush'), rank: 0 },
+    { name: 'Energy Generator', plat: 0, standing: 75000, url: convertToSnakeCase('Energy Generator'), rank: 0 },
+    { name: 'Botanist', plat: 0, standing: 75000, url: convertToSnakeCase('Botanist'), rank: 0 },
+    { name: 'Energy Conversion', plat: 0, standing: 100000, url: convertToSnakeCase('Energy Conversion'), rank: 0 },
+    { name: 'Health Conversion', plat: 0, standing: 100000, url: convertToSnakeCase('Health Conversion'), rank: 0 },
+    { name: 'Astral Autopsy', plat: 0, standing: 100000, url: convertToSnakeCase('Astral Autopsy'), rank: 0 },
 ];

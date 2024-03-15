@@ -7,6 +7,8 @@ import { showLoadingIndicator } from "./main.js";
 import { hideLoadingIndicator } from "./main.js";
 import { sortByRatioDescending } from "./main.js";
 
+let container = document.getElementById('cardContainer');
+
 // Fetch button, every page will have one of these
 const fetchBtn = document.querySelector('.fetchDataBtn')
 fetchBtn.addEventListener('click', function() {
@@ -40,19 +42,19 @@ fetchBtn.addEventListener('click', function() {
 
 // Big pretty list goes here
 let holdfastsList = [
-    { name: 'Eternal Eradicate', plat: 0, standing: 5000, url: convertToSnakeCase('Eternal Eradicate'), rank: 5 },
-    { name: 'Cascadia Accuracy', plat: 0, standing: 5000, url: convertToSnakeCase('Cascadia Accuracy'), rank: 5 },
-    { name: 'Fractalized Reset', plat: 0, standing: 5000, url: convertToSnakeCase('Fractalized Reset'), rank: 5 },
-    { name: 'Molt Vigor', plat: 0, standing: 5000, url: convertToSnakeCase('Molt Vigor'), rank: 5 },
-    { name: 'Emergence Savior', plat: 0, standing: 5000, url: convertToSnakeCase('Emergence Savior'), rank: 5 },
-    { name: 'Eternal Onslaught', plat: 0, standing: 5500, url: convertToSnakeCase('Eternal Onslaught'), rank: 5 },
-    { name: 'Cascadia Flare', plat: 0, standing: 5500, url: convertToSnakeCase('Cascadia Flare'), rank: 5 },
-    { name: 'Cascadia Empowered', plat: 0, standing: 7500, url: convertToSnakeCase('Cascadia Empowered'), rank: 5 },
-    { name: 'Molt Efficiency', plat: 0, standing: 7500, url: convertToSnakeCase('Molt Efficiency'), rank: 5 },
-    { name: 'Emergence Renewed', plat: 0, standing: 7500, url: convertToSnakeCase('Emergence Renewed'), rank: 5 },
-    { name: 'Molt Reconstruct', plat: 0, standing: 8500, url: convertToSnakeCase('Molt Reconstruct'), rank: 5 },
-    { name: 'Eternal Logistics', plat: 0, standing: 8500, url: convertToSnakeCase('Eternal Logistics'), rank: 5 },
-    { name: 'Cascadia Overcharge', plat: 0, standing: 10000, url: convertToSnakeCase('Cascadia Overcharge'), rank: 5 },
-    { name: 'Emergence Dissipate', plat: 0, standing: 10000, url: convertToSnakeCase('Emergence Dissipate'), rank: 5 },
-    { name: 'Molt Augmented', plat: 0, standing: 10000, url: convertToSnakeCase('Molt Augmented'), rank: 5 },
+    { name: 'Eternal Eradicate', plat: 0, standing: 5000 * 21, url: convertToSnakeCase('Eternal Eradicate'), rank: 5 },
+    { name: 'Cascadia Accuracy', plat: 0, standing: 5000 * 21, url: convertToSnakeCase('Cascadia Accuracy'), rank: 5 },
+    { name: 'Fractalized Reset', plat: 0, standing: 5000 * 21, url: convertToSnakeCase('Fractalized Reset'), rank: 5 },
+    { name: 'Molt Vigor', plat: 0, standing: 5000 * 21, url: convertToSnakeCase('Molt Vigor'), rank: 5 },
+    { name: 'Emergence Savior', plat: 0, standing: 5000 * 21, url: convertToSnakeCase('Emergence Savior'), rank: 5 },
+    { name: 'Eternal Onslaught', plat: 0, standing: 5500 * 21, url: convertToSnakeCase('Eternal Onslaught'), rank: 5 },
+    { name: 'Cascadia Flare', plat: 0, standing: 5500 * 21, url: convertToSnakeCase('Cascadia Flare'), rank: 5 },
+    { name: 'Cascadia Empowered', plat: 0, standing: 7500 * 21, url: convertToSnakeCase('Cascadia Empowered'), rank: 5 },
+    { name: 'Molt Efficiency', plat: 0, standing: 7500 * 21, url: convertToSnakeCase('Molt Efficiency'), rank: 5 },
+    { name: 'Emergence Renewed', plat: 0, standing: 7500 * 21, url: convertToSnakeCase('Emergence Renewed'), rank: 5 },
+    { name: 'Molt Reconstruct', plat: 0, standing: 8500 * 21, url: convertToSnakeCase('Molt Reconstruct'), rank: 5 },
+    { name: 'Eternal Logistics', plat: 0, standing: 8500 * 21, url: convertToSnakeCase('Eternal Logistics'), rank: 5 },
+    { name: 'Cascadia Overcharge', plat: 0, standing: 10000 * 21, url: convertToSnakeCase('Cascadia Overcharge'), rank: 5 },
+    { name: 'Emergence Dissipate', plat: 0, standing: 10000 * 21, url: convertToSnakeCase('Emergence Dissipate'), rank: 5 },
+    { name: 'Molt Augmented', plat: 0, standing: 10000 * 21, url: convertToSnakeCase('Molt Augmented'), rank: 5 },
 ];

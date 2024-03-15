@@ -299,6 +299,41 @@ button:hover {
     filter: brightness(1.2);
 }
 
+/* STEEL MERIDIAN */
+.titleWrapperSteel {
+    background-color: #2C3E47;
+}
+
+/* ARBITERS OF HEXIS */
+.titleWrapperArbiters {
+    background-color: rgb(54,65,69);
+}
+
+/* CEPHALON SUDA */
+.titleWrapperCephSuda {
+    background-color: rgb(61,55,93);
+}
+
+/* THE PERRIN SEQUENCE */
+.titleWrapperPerrin {
+    background-color: rgb(61,72,98);
+}
+
+/* RED VEIL */
+.titleWrapperRedVeil{
+    background-color: rgb(60,25,57);
+}
+
+/* NEW LOKA */
+.titleWrapperLoka {
+    background-color: rgb(42,61,47);
+}
+
+/* CEPHALON SIMARIS */
+.titleWrapperCephSim {
+    background-color: rgb(94,61,13);
+}
+
 /* OSTRON */
 .titleWrapperOstron {
     background-color: rgb(182,71,36);
