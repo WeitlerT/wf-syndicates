@@ -290,6 +290,15 @@ button:hover {
     filter: brightness(1.2);
 }
 
+#arbitration {
+    background-color: rgb(33,37,42);
+    color: white;
+}
+
+#arbitration:hover {
+    filter: brightness(1.2);
+}
+
 /* QUILLS */
 .titleWrapperQuills {
     background-color: rgb(246,251,203);
@@ -328,6 +337,11 @@ button:hover {
 /* KAHL */
 .titleWrapperKahl {
     background-color: rgb(4,34,18);
+}
+
+/* ARBITRATION */
+.titleWrapperArbitration {
+    background-color: rgb(33,37,42);
 }
 
 /* CARD STYLING */

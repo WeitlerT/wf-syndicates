@@ -77,3 +77,8 @@ const kahlBtn = document.getElementById('kahl')
 kahlBtn.addEventListener('click', function() {
     window.location.href = 'pages/kahl.html';
 })
+
+const arbiBtn = document.getElementById('arbitration')
+arbiBtn.addEventListener('click', function() {
+    window.location.href = 'pages/arbitration.html';
+})

@@ -94,7 +94,7 @@ function populatePage(list, containerId) {
         rankParagraph.textContent = `Rank: ${item.rank}`;
 
         const platStandingParagraph = document.createElement('p');
-        platStandingParagraph.textContent = `Plat:Standing Ratio: ${((item.plat / item.standing)* 10).toFixed(4)}`
+        platStandingParagraph.textContent = `Plat:Stan Ratio: ${((item.plat / item.standing)* 10).toFixed(4)}`
 
         const platImg = document.createElement('img');
         platImg.src = '../images/PlatinumLarge.webp';
