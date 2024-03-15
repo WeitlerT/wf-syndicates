@@ -299,6 +299,12 @@ button:hover {
     filter: brightness(1.2);
 }
 
+/* OSTRON */
+.titleWrapperOstron {
+    background-color: rgb(182,71,36);
+    color: white;
+}
+
 /* QUILLS */
 .titleWrapperQuills {
     background-color: rgb(246,251,203);

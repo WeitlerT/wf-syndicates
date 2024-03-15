@@ -76,30 +76,44 @@ function populatePage(list, containerId) {
         const card = document.createElement('div');
         card.classList.add('card');
 
-        // OLD TITLE
-        // const title = document.createElement('h3');
-        // title.textContent = item.name;
-
+        // TITLE/NAME
         const titleLink = document.createElement('a');
         titleLink.href = `https://warframe.market/items/${item.url}`;
         titleLink.textContent = item.name;
 
+        // PLAT
         const platParagraph = document.createElement('p');
-        platParagraph.textContent = `Plat Avg: ${item.plat}`;
+        if (isNaN(item.plat)){
+          platParagraph.textContent = `Plat Avg: ${"Not enough data"}`;
+        }
+        else {
+          platParagraph.textContent = `Plat Avg: ${item.plat}`;
+        }
 
+        // STANDING
         const standingParagraph = document.createElement('p');
-        standingParagraph.textContent = `Standing: ${item.standing}`;
+        standingParagraph.textContent = `Standing: ${(item.standing).toLocaleString()}`;
 
+        // MOD/ARCANE RANK
         const rankParagraph = document.createElement('p');
         rankParagraph.textContent = `Rank: ${item.rank}`;
 
+        // PLAT/STANDING RATIO
         const platStandingParagraph = document.createElement('p');
-        platStandingParagraph.textContent = `Plat:Stan Ratio: ${((item.plat / item.standing)* 10).toFixed(4)}`
+        if (isNaN(item.standing)){
+          platStandingParagraph.textContent = `Plat:Stan Ratio: ${"Not enough data"}`
 
+        }
+        else {
+          platStandingParagraph.textContent = `Plat:Stan Ratio: ${((item.plat / item.standing)* 10).toFixed(4)}`
+        }
+
+        // PLAT IMG
         const platImg = document.createElement('img');
         platImg.src = '../images/PlatinumLarge.webp';
         platParagraph.appendChild(platImg);
 
+        // STANDING IMG
         const standingImg = document.createElement('img');
         standingImg.src = '../images/ReputationLargeBlack.webp';
         standingParagraph.appendChild(standingImg);
