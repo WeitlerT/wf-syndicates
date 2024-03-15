@@ -7,9 +7,18 @@ import { showLoadingIndicator } from "./main.js";
 import { hideLoadingIndicator } from "./main.js";
 import { sortByRatioDescending } from "./main.js";
 
+let container = document.getElementById('cardContainer');
+
 // Fetch button, every page will have one of these
 const fetchBtn = document.querySelector('.fetchDataBtn')
 fetchBtn.addEventListener('click', function() {
+
+    // Check if container is empty
+    if (container.innerHTML.trim() !== '') {
+        // Clear the contents of the container div
+        container.innerHTML = '';
+    }
+    
     // Replace list with whatever list you have for page
     const voxPromises = voxList.map(item => fetchDataAndUpdatePlat(item));
 
