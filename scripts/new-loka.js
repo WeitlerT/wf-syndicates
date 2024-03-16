@@ -13,7 +13,7 @@ let container = document.getElementById('cardContainer');
 const fetchBtn = document.querySelector('.fetchDataBtn')
 fetchBtn.addEventListener('click', function() {
 
-    // Check if container is empty
+    // If container is NOT empty then clear it
     if (container.innerHTML.trim() !== '') {
         // Clear the contents of the container div
         container.innerHTML = '';
