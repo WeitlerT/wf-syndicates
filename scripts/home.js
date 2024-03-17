@@ -3,7 +3,7 @@ steelBtn.addEventListener('click', function() {
       window.location.href = 'pages/steel.html';
 })
 
-const arbitersBtn = document.getElementById('cephalonSuda')
+const arbitersBtn = document.getElementById('arbiters')
 arbitersBtn.addEventListener('click', function() {
     window.location.href = 'pages/arbiters.html';
 })
