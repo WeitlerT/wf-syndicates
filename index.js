@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, shell } = require('electron/main')
+const { app, BrowserWindow, ipcMain, shell } = require('electron')
 const path = require('node:path')
 
 const electronReload = require('electron-reload');
@@ -24,10 +24,6 @@ function createWindow () {
 app.whenReady().then(() => {
   createWindow()
 
-  ipcMain.handle('openExternalLink', (_, url) => {
-    shell.openExternal(url);
-  });
-
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
       createWindow()
@@ -40,3 +36,7 @@ app.on('window-all-closed', () => {
     app.quit()
   }
 })
+
+ipcMain.on('open-external-link', (event, url) => {
+  shell.openExternal(url);
+});

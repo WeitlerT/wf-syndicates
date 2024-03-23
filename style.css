@@ -5,7 +5,7 @@ body {
     font-weight: 400;
 }
 
-/* CONTAINERS/WRAPPERS */
+/* CONTAINERS/WRAPPERS ----------------------------------------------- */
 .home-container {
     box-sizing: border-box;
     padding: 10px;
@@ -48,7 +48,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* LOADING CONTAINER/TOAST */
+/* LOADING CONTAINER/TOAST ----------------------------------------------- */
 #loadingToast {
     padding: 20px;
     background-color: #000000;
@@ -79,7 +79,7 @@ body {
   }
 
 
-/* SCROLLBAR */
+/* SCROLLBAR ----------------------------------------------- */
 ::-webkit-scrollbar {
     width: 12px;
   }
@@ -94,7 +94,7 @@ body {
     background-color: #171718; /* Dark color for the scrollbar handle on hover */
   }
 
-/* GLOBAL BUTTONS/ICONS */
+/* GLOBAL BUTTONS/ICONS ----------------------------------------------- */
 button {
     border: 2px solid black;
     font-size: 20px;
@@ -147,7 +147,7 @@ button:hover {
     margin-left: 10px;
 }
 
-/* HOME BUTTONS */
+/* HOME BUTTONS ----------------------------------------------- */
 #steelMeridian {
     background-color: #2C3E47;
     color: white;
@@ -299,6 +299,8 @@ button:hover {
     filter: brightness(1.2);
 }
 
+/* INDIVIDUAL PAGE STYLING ----------------------------------------------- */
+
 /* STEEL MERIDIAN */
 .titleWrapperSteel {
     background-color: #2C3E47;
@@ -385,7 +387,7 @@ button:hover {
     background-color: rgb(33,37,42);
 }
 
-/* CARD STYLING */
+/* CARD STYLING ----------------------------------------------- */
 #cardContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -405,6 +407,11 @@ button:hover {
     margin-bottom: 8px;
     color: white;
     font-size: 24px;
+  }
+
+  .card a:hover {
+    cursor: pointer;
+    color: black;
   }
   
   .card p {

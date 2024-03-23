@@ -61,8 +61,9 @@ function fetchDataAndUpdatePlat(item, maxRetries = 10, delay = 2000) {
       }
     };
     return fetchData(url, maxRetries);
-  }
+}
 
+// Func that will populate each page with the data/cards
 function populatePage(list, containerId) {
     const container = document.getElementById(containerId);
 
@@ -78,8 +79,9 @@ function populatePage(list, containerId) {
 
         // TITLE/NAME
         const titleLink = document.createElement('a');
-        titleLink.href = `https://warframe.market/items/${item.url}`;
         titleLink.textContent = item.name;
+        titleLink.id = `title-link-${item.url}`;
+        titleLink.classList.add('title-links');
 
         // PLAT
         const platParagraph = document.createElement('p');
@@ -127,14 +129,15 @@ function populatePage(list, containerId) {
 
         // Append the card to the container
         container.appendChild(card);
+
+        console.log(item.url);
+        document.getElementById(`title-link-${item.url}`).addEventListener('click', function() {
+          openExternalLink(`https://warframe.market/items/${item.url}`)
+        })
     });
 }
 
-function convertToSnakeCase(inputString) {
-    // Replace spaces with underscores, convert to lowercase
-    return inputString.toLowerCase().replace(/\s+/g, '_');
-}
-
+// Simple func that is going to sort our list of orders based off plat vs standing ratio
 function sortByRatioDescending(list) {
     return list.sort((a, b) => {
         const ratioA = (a.plat / a.standing) * 10;
@@ -144,17 +147,28 @@ function sortByRatioDescending(list) {
     });
 }
 
+// Func that allows us to open links in default browser
+function openExternalLink(url) {
+  window.electron.shell.openExternal(url);
+}
+
+// Will handle converting our URL's to snake case
+function convertToSnakeCase(inputString) {
+    // Replace spaces with underscores, convert to lowercase
+    return inputString.toLowerCase().replace(/\s+/g, '_');
+}
+
 function showLoadingIndicator() {
     const loadingToast = document.getElementById('loadingToast');
     loadingToast.style.display = 'block';
     document.getElementById('loadingContainer').style.display = 'flex';
-  }
+}
 
 function hideLoadingIndicator() {
     const loadingToast = document.getElementById('loadingToast');
     loadingToast.style.display = 'none';
     document.getElementById('loadingContainer').style.display = 'none';
-  }
+}
 
-// Hide by default only show when loading data
+// Hide loading indicator by default only show when loading data
 hideLoadingIndicator()
