@@ -42,6 +42,10 @@ fetchBtn.addEventListener('click', function() {
 
 // Big pretty list goes here
 let redList = [
+    { name: 'Warriors Rest', plat: 0, standing: 25000, url: convertToSnakeCase('Warriors Rest'), rank: 0 },
+    { name: 'Damage Decoy', plat: 0, standing: 25000, url: convertToSnakeCase('Damage Decoy'), rank: 0 },
+    { name: 'Valence Formation', plat: 0, standing: 25000, url: convertToSnakeCase('Valence Formation'), rank: 0 },
+    { name: 'Recrystalize', plat: 0, standing: 25000, url: convertToSnakeCase('Recrystalize'), rank: 0 },
     { name: 'Gleaming Blight', plat: 0, standing: 25000, url: convertToSnakeCase('Gleaming Blight'), rank: 0 },
     { name: 'Eroding Blight', plat: 0, standing: 25000, url: convertToSnakeCase('Eroding Blight'), rank: 0 },
     { name: 'Stockpiled Blight', plat: 0, standing: 25000, url: convertToSnakeCase('Stockpiled Blight'), rank: 0 },

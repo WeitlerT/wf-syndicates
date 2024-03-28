@@ -42,6 +42,9 @@ fetchBtn.addEventListener('click', function() {
 
 // Big pretty list goes here
 let steeList = [
+    { name: 'Parasitic Vitality', plat: 0, standing: 25000, url: convertToSnakeCase('Parasitic Vitality'), rank: 0 },
+    { name: 'Divine Retribution', plat: 0, standing: 25000, url: convertToSnakeCase('Divine Retribution'), rank: 0 },
+    { name: 'Wrath of Ukko', plat: 0, standing: 25000, url: convertToSnakeCase('Wrath of Ukko'), rank: 0 },
     { name: 'Scattered Justice', plat: 0, standing: 25000, url: convertToSnakeCase('Scattered Justice'), rank: 0 },
     { name: 'Justice Blades', plat: 0, standing: 25000, url: convertToSnakeCase('Justice Blades'), rank: 0 },
     { name: 'Neutralizing Justice', plat: 0, standing: 25000, url: convertToSnakeCase('Neutralizing Justice'), rank: 0 },
@@ -104,4 +107,5 @@ let steeList = [
     { name: 'Ulfruns Endurance', plat: 0, standing: 25000, url: convertToSnakeCase('Ulfruns Endurance'), rank: 0 },
     { name: 'Vampiric Grasp', plat: 0, standing: 25000, url: convertToSnakeCase('Vampiric Grasp'), rank: 0 },
     { name: 'The Relentless Lost', plat: 0, standing: 25000, url: convertToSnakeCase('The Relentless Lost'), rank: 0 },
+    { name: 'Recrystalize', plat: 0, standing: 25000, url: convertToSnakeCase('Recrystalize'), rank: 0 },
 ];

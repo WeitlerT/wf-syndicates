@@ -47,6 +47,10 @@ let lokaList = [
     // { name: 'Rathbone Head', plat: 0, standing: 20000, url: convertToSnakeCase('Rathbone Head'), rank: 0 },
     // { name: 'Agkuza Blade', plat: 0, standing: 20000, url: convertToSnakeCase('Agkuza Blade'), rank: 0 },
     // { name: 'Centaur Handle', plat: 0, standing: 20000, url: convertToSnakeCase('Centaur Handle'), rank: 0 },
+    { name: 'Loyal Merulina', plat: 0, standing: 25000, url: convertToSnakeCase('Loyal Merulina'), rank: 0 },
+    { name: 'Axios Javelineers', plat: 0, standing: 25000, url: convertToSnakeCase('Axios Javelineers'), rank: 0 },
+    { name: 'Valence Formation', plat: 0, standing: 25000, url: convertToSnakeCase('Valence Formation'), rank: 0 },
+    { name: 'Wrath of Ukko', plat: 0, standing: 25000, url: convertToSnakeCase('Wrath of Ukko'), rank: 0 },
     { name: 'Winds of Purity', plat: 0, standing: 25000, url: convertToSnakeCase('Winds of Purity'), rank: 0 },
     { name: 'Disarming Purity', plat: 0, standing: 25000, url: convertToSnakeCase('Disarming Purity'), rank: 0 },
     { name: 'Bright Purity', plat: 0, standing: 25000, url: convertToSnakeCase('Bright Purity'), rank: 0 },
@@ -104,4 +108,5 @@ let lokaList = [
     { name: 'Primal Rage', plat: 0, standing: 25000, url: convertToSnakeCase('Primal Rage'), rank: 0 },
     { name: 'Merulina Guardian', plat: 0, standing: 25000, url: convertToSnakeCase('Merulina Guardian'), rank: 0 },
     { name: 'Surging Blades', plat: 0, standing: 25000, url: convertToSnakeCase('Surging Blades'), rank: 0 },
+    { name: 'Elusive Retribution', plat: 0, standing: 25000, url: convertToSnakeCase('Elusive Retribution'), rank: 0 },
 ];

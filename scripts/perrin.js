@@ -42,6 +42,7 @@ fetchBtn.addEventListener('click', function() {
 
 // Big pretty list goes here
 let perrinList = [
+    { name: 'Parasitic Vitality', plat: 0, standing: 25000, url: convertToSnakeCase('Parasitic Vitality'), rank: 0 },
     { name: 'Toxic Sequence', plat: 0, standing: 25000, url: convertToSnakeCase('Toxic Sequence'), rank: 0 },
     { name: 'Deadly Sequence', plat: 0, standing: 25000, url: convertToSnakeCase('Deadly Sequence'), rank: 0 },
     { name: 'Voltage Sequence', plat: 0, standing: 25000, url: convertToSnakeCase('Voltage Sequence'), rank: 0 },
@@ -98,4 +99,5 @@ let perrinList = [
     { name: 'Tesla Bank', plat: 0, standing: 25000, url: convertToSnakeCase('Tesla Bank'), rank: 0 },
     { name: 'Repelling Bastille', plat: 0, standing: 25000, url: convertToSnakeCase('Repelling Bastille'), rank: 0 },
     { name: 'Photon Repeater', plat: 0, standing: 25000, url: convertToSnakeCase('Photon Repeater'), rank: 0 },
+    { name: 'Guardian Armor', plat: 0, standing: 25000, url: convertToSnakeCase('Guardian Armor'), rank: 0 },
 ];

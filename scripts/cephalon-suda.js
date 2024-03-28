@@ -42,6 +42,8 @@ fetchBtn.addEventListener('click', function() {
 
 // Big pretty list goes here
 let cephList = [
+    { name: 'Loyal Merulina', plat: 0, standing: 25000, url: convertToSnakeCase('Loyal Merulina'), rank: 0 },
+    { name: 'Divine Retribution', plat: 0, standing: 25000, url: convertToSnakeCase('Divine Retribution'), rank: 0 },
     { name: 'Entropy Spike', plat: 0, standing: 25000, url: convertToSnakeCase('Entropy Spike'), rank: 0 },
     { name: 'Entropy Flight', plat: 0, standing: 25000, url: convertToSnakeCase('Entropy Flight'), rank: 0 },
     { name: 'Entropy Detonation', plat: 0, standing: 25000, url: convertToSnakeCase('Entropy Detonation'), rank: 0 },
@@ -97,4 +99,5 @@ let cephList = [
     { name: 'The Relentless Lost', plat: 0, standing: 25000, url: convertToSnakeCase('The Relentless Lost'), rank: 0 },
     { name: 'Merulina Guardian', plat: 0, standing: 25000, url: convertToSnakeCase('Merulina Guardian'), rank: 0 },
     { name: 'Surging Blades', plat: 0, standing: 25000, url: convertToSnakeCase('Surging Blades'), rank: 0 },
+    { name: 'Guardian Armor', plat: 0, standing: 25000, url: convertToSnakeCase('Guardian Armor'), rank: 0 },
 ];

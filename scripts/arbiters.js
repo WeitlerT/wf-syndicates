@@ -42,6 +42,9 @@ fetchBtn.addEventListener('click', function() {
 
 // Big pretty list goes here
 let arbiterList = [
+    { name: 'Warriors Rest', plat: 0, standing: 25000, url: convertToSnakeCase('Warriors Rest'), rank: 0 },
+    { name: 'Axios Javelineers', plat: 0, standing: 25000, url: convertToSnakeCase('Axios Javelineers'), rank: 0 },
+    { name: 'Damage Decoy', plat: 0, standing: 25000, url: convertToSnakeCase('Damage Decoy'), rank: 0 },
     { name: 'Gilded Truth', plat: 0, standing: 25000, url: convertToSnakeCase('Gilded Truth'), rank: 0 },
     { name: 'Blade of Truth', plat: 0, standing: 25000, url: convertToSnakeCase('Blade of Truth'), rank: 0 },
     { name: 'Avenging Truth', plat: 0, standing: 25000, url: convertToSnakeCase('Avenging Truth'), rank: 0 },
@@ -94,4 +97,5 @@ let arbiterList = [
     { name: 'Celestial Stomp', plat: 0, standing: 25000, url: convertToSnakeCase('Celestial Stomp'), rank: 0 },
     { name: 'Enveloping Cloud', plat: 0, standing: 25000, url: convertToSnakeCase('Enveloping Cloud'), rank: 0 },
     { name: 'Primal Rage', plat: 0, standing: 25000, url: convertToSnakeCase('Primal Rage'), rank: 0 },
+    { name: 'Elusive Retribution', plat: 0, standing: 25000, url: convertToSnakeCase('Elusive Retribution'), rank: 0 },
 ];

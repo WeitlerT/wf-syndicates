@@ -130,10 +130,11 @@ function populatePage(list, containerId) {
         // Append the card to the container
         container.appendChild(card);
 
-        console.log(item.url);
+        // Add event listener to each item so we can open link externally
         document.getElementById(`title-link-${item.url}`).addEventListener('click', function() {
           openExternalLink(`https://warframe.market/items/${item.url}`)
         })
+        
     });
 }
 
